@@ -1,5 +1,26 @@
 @import 'bootstrap/dist/css/bootstrap';
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss';
 
-.navbar {
-  background-color: yellow !important;
+.jumbotron {
+  background-color: #5b197b; 
+  height: 65vh;
+  margin-top: 5vh;
+}
+
+
+/* sticky footer classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #ddcaed;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
