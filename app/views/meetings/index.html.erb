@@ -1,25 +1,32 @@
-<h1>Listing all meetings</h1>
+<div class="page-content">
+  <h1>Listing all meetings</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Time</th>
-      <th>Location</th>
-      <th>Description</th>
-
-    </tr>
-  </thead>
-  <tbody>
-    <% @meetings.each do |meeting| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= meeting.title %></td>
-        <td><%= meeting.date %></td>
-        <td><%= meeting.time %></td>
-        <td><%= meeting.location %></td>
-        <td><%= meeting.description %></td>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Description</th>
+
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @meetings.each do |meeting| %>
+        <tr>
+          <td><%= meeting.title %></td>
+          <td><%= meeting.date %></td>
+          <td><%= meeting.time %></td>
+          <td><%= meeting.location %></td>
+          <td><%= meeting.description %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<footer id="sticky-footer" class="py-4 bg-white">
+  <div class="container text-center">
+    <small>Copyright &copy; Homestead WEA</small>
+  </div>
+</footer>
