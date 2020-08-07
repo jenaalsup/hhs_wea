@@ -1,0 +1,25 @@
+<h1>Listing all meetings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Location</th>
+      <th>Description</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @meetings.each do |meeting| %>
+      <tr>
+        <td><%= meeting.title %></td>
+        <td><%= meeting.date %></td>
+        <td><%= meeting.time %></td>
+        <td><%= meeting.location %></td>
+        <td><%= meeting.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
