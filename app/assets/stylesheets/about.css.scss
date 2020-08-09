@@ -1,3 +1,15 @@
 .card-image-top {
   background-image: asset-url('jena.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+}
+
+.officer-role {
+  color: #5b197b;
+}
+
+.card {
+  width: 50%;
 }
