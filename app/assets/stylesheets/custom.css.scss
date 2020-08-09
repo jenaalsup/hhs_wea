@@ -1,6 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss';
+@import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss', 'footer.css.scss';
 
 .jumbotron {
   background-color: #5b197b; 
@@ -14,6 +14,7 @@
 html,
 body {
   height: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .page-content {
