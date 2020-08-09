@@ -3,12 +3,22 @@
 @import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss', 'footer.css.scss';
 
 .jumbotron {
-  background-color: #5b197b; 
+  background-color: white; 
   height: 65vh;
   margin-top: 5vh;
 }
 
+.short-hr {
+  width: 100px;
+}
 
+.mailing-list-link {
+  color: #5b197b !important;
+}
+
+.a {
+  color: #5b197b !important;
+}
 /* sticky footer classes */
 
 html,

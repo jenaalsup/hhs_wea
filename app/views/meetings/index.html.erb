@@ -1,28 +1,35 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <div class="page-content">
-  <h1>Listing all meetings</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Location</th>
-        <th>Description</th>
-
-      </tr>
-    </thead>
-    <tbody>
-      <% @meetings.each do |meeting| %>
-        <tr>
-          <td><%= meeting.title %></td>
-          <td><%= meeting.date %></td>
-          <td><%= meeting.time %></td>
-          <td><%= meeting.location %></td>
-          <td><%= meeting.description %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+  <h1 class="text-center mt-4">Meetings</h1>
+  <hr class="short-hr">
+  <div class="container">
+    <div class="card-deck">
+      <div class="row row-cols-1 row-cols-md-4">
+          <% @meetings.each do |meeting| %>
+            <div class="row justify-content-md-center">
+              <div class="col-8 mb-4">
+                <div class="card shadow mb-5 bg-white rounded" style="width: 18rem;">
+                  <div class="card-body">
+                    <h4 id="meeting-title" class="card-title"><%= meeting.title %></h4>
+                    <i class="material-icons">today</i>
+                    <%= meeting.date.strip %>
+                    <br>
+                    <i class="material-icons">access_time</i>
+                    <%= meeting.time.strip %>
+                    <br>
+                    <i class="material-icons">location_on</i>
+                    <%= meeting.location.strip %>
+                    <p></p>
+                    <p class="card-text"><%= meeting.description %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
