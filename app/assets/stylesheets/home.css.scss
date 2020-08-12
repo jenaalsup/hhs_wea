@@ -1,0 +1,53 @@
+.home-jumbotron {
+  background-color: white;
+  height: 500px;
+}
+
+.carousel {
+  height: 500px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(50%);
+}
+
+
+
+/* images */
+
+.carousel-1 {
+  background-image: asset-url('home_1.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-2 {
+  background-image: asset-url('home_2.png') !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-3 {
+  background-image: asset-url('home_3.jpg') !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-4 {
+  background-image: asset-url('home_4.jpeg') !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,12 +1,6 @@
 @import 'bootstrap/dist/css/bootstrap';
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss', 'footer.css.scss';
-
-.jumbotron {
-  background-color: white; 
-  height: 55vh;
-  margin-top: 5vh;
-}
+@import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss', 'footer.css.scss', 'contact.css.scss';
 
 .short-hr {
   width: 100px;
@@ -19,6 +13,7 @@
 .a {
   color: #5b197b !important;
 }
+
 /* sticky footer classes */
 
 html,
