@@ -2,6 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import 'navigation.css.scss', 'home.css.scss', 'about.css.scss', 'meetings.css.scss', 'footer.css.scss', 'contact.css.scss';
 
+.card-image-top-jackie {
+  background-image: asset-url('jackie.JPG') !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 275px;
+} 
+
 .short-hr {
   width: 100px;
 }
