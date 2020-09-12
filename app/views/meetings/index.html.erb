@@ -18,6 +18,9 @@
             <br>
             <i class="material-icons">location_on</i>
             <%= link_to meeting.location.strip, meeting.location.strip %>
+            <br>
+            <i class="material-icons">camera_roll</i>
+            <%= link_to 'Zoom Recording Link', meeting.recording.strip %>
             <p></p>
             <p class="card-text"><%= meeting.description %></p>
           </div>
