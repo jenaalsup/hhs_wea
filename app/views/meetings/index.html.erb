@@ -18,8 +18,11 @@
             <%= meeting.time.strip %>
             <br>
             <i class="material-icons">location_on</i>
-            <% if (meeting.location)[0..3].eql?('http') %>
-              <%= link_to meeting.location.strip, meeting.location.strip %>
+            <% if (meeting.location)[0..3].eql?('http') %>  
+              <%= link_to meeting.location.strip, meeting.location.strip %>   
+              <% if (meeting.date)[0].eql?('4') ||  (meeting.date)[0].eql?('5') %>
+                or C207
+              <% end %>
             <% else %>
               <%= meeting.location %>
             <% end %>
